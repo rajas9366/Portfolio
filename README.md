@@ -1,11 +1,5 @@
-# Portfolio Risk Analysis Dashboard (Power BI)
+# FINANCE PORTFOLIO
 
-This project compares Finance and Tech sector performance using KPIs like Sharpe Ratio, Sortino, Beta, and Upside Potential.
+Welcome to my portfolio! This thread contains some of my best work since 2021. Feel free to reach out to me on LinkedIn if you like it!
 
-📊 Built with Power BI  
-📈 Data Source: Excel file included  
-📁 Files:
-- `Portfolio_Management_Project_1.pbix` — Power BI file
-- `Project 1_MGF 696.xlsx` — raw data (Finance & Tech sector)
-
----
+www.linkedin.com/in/rajas-koranne
