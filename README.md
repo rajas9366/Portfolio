@@ -1,11 +1,13 @@
-# Portfolio Risk Analysis Dashboard (Power BI)
+# Financial Modeling & Analysis
 
-This project compares Finance and Tech sector performance using KPIs like Sharpe Ratio, Sortino, Beta, and Upside Potential.
+Welcome to my Financial Modeling folder. Let’s decode the numbers behind business strategy!
 
-📊 Built with Power BI  
-📈 Data Source: Excel file included  
-📁 Files:
-- `Portfolio_Management_Project_1.pbix` — Power BI file
-- `Project 1_MGF 696.xlsx` — raw data (Finance & Tech sector)
+Here’s what you’ll find inside:
+
+A) Two modeling & analysis projects I developed during Spring 2021 and Fall 2023 respectively
+
+B) Comprehensive valuation frameworks, ratio breakdowns, scenario testing, and final takeaways
+
+Whether you're an investor, analyst, or just curious about financial storytelling — this folder bridges numbers with narrative.
 
 ---
