@@ -7,6 +7,7 @@ Tools Used: Python (NumPy, pandas, matplotlib), Monte Carlo Simulation
 Data Source: Historical S&P 500 Options & RBOB Gasoline pricing data
 
 #Projects Included:
+
 1. Options Volatility & VIX Study
 A deep dive into S&P 500 options pricing behavior across strike prices and expiration dates, paired with PDF insights from VIX dynamics.
 
