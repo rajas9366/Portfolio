@@ -18,6 +18,6 @@ Let’s decode markets, visualize uncertainty, and bring numbers to life. 🚀
 | 💹 [Fixed Income Research](https://github.com/rajas9366/Portfolio/tree/Fixed-Income-Research) | Bond analysis, yield curve modeling, duration/convexity work |
 | 🧠 [Complex Financial Instruments](https://github.com/yourusername/yourrepo/tree/Complex-Financial-Instruments) | Options pricing, derivative modeling, and structured product breakdowns |
 
---- Feel free to reach out to me on LinkedIn if you like my work!
+Feel free to reach out to me on LinkedIn if you like my work!
 
 www.linkedin.com/in/rajas-koranne
