@@ -17,6 +17,7 @@ VIX_UPDATED.pdf — Theoretical reference document
 
 Covers implied volatility surfaces, skew, and term structure.
 
+
 2. RBOB Gasoline Monte Carlo Simulation
 Simulates the price path of RBOB Gasoline futures using stochastic processes.
 
