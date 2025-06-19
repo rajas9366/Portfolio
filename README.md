@@ -1,4 +1,5 @@
 #Complex Financial Instruments – Simulation & Options Analytics
+
 This branch explores the modeling and analysis of derivative products like options and futures, with a special focus on volatility behavior, pricing dynamics, and risk exposure.
 
 Tools Used: Python (NumPy, pandas, matplotlib), Monte Carlo Simulation
