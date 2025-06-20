@@ -4,9 +4,11 @@ This branch focuses on fixed income instruments—covering everything from bond 
 
 Tools Used: Microsoft Excel, Bond Math, Duration/Convexity Analysis
 Data Source: Historical bond yields and synthetic instruments
-Note: Please ensure you have the Excel Yield-Book plugin pre-installed to enable full bond analytics and pricing functionality.
 
-Projects Included:
+# Note: Please ensure you have the Excel Yield-Book plugin pre-installed to enable full bond analytics and pricing functionality.
+
+# Projects Included:
+
 1. Bond Portfolio Design
 A comprehensive model that creates a diversified bond portfolio optimized for duration and yield exposure.
 
