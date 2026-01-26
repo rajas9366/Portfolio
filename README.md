@@ -8,7 +8,7 @@ A) All 4 PM projects that I built over the course of Fall 2024
 
 B) Interactive Power BI Dashboards
 
-C) Coding walkthroughs, Excel files, final results and much more!
+C) Coding walkthroughs, Excel files, final results, and much more!
 
 
 ---
