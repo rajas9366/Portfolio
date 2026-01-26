@@ -9,17 +9,17 @@ Data Source: Historical bond yields and synthetic instruments
 
 # Projects Included:
 
-1. Bond Portfolio Design
--A comprehensive model that creates a diversified bond portfolio optimized for duration and yield exposure.
+1. Bond Portfolio Design:
+A comprehensive model that creates a diversified bond portfolio optimized for duration and yield exposure.
 
 Project 1_Portfolio Creation.xlsx
 
-2. Hedging Rate Exposure
+2. Hedging Rate Exposure:
 -Applies real hedging techniques using bond futures and swaps to reduce interest rate sensitivity.
 
 Project 2_Hedging.xlsx
 
-3. Bond Pricing & Yield Behavior
+3. Bond Pricing & Yield Behavior:
 Deep dive into cash flows, price/yield relationships, and spread analytics.
 
 Bond Project.xlsx
