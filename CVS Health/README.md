@@ -6,7 +6,7 @@ This project analyzes CVS Health Corporation’s financial performance and valua
 ## 💡 Recommendation
 **HOLD**  
 **Target Price:** $99.96  
-**Current Price (as of Jan 2026):** $82.68
+**Current Price (as of Jan 22, 2026):** $82.68
 
 ## 🔍 Key Features
 - Multi-year revenue, expenses, and profit margin analysis
