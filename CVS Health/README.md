@@ -27,7 +27,7 @@ This project analyzes CVS Health Corporation’s financial performance and valua
 ## 📁 Files
 - `CVS_Financial_Model.xlsx`: Full financial model
 - `football_field_chart.png`: Valuation comparison
-- `net_income_projection.png`: Forecast visualization
+- `revenue_projection.png`: Forecast visualization
 
 ## 📌 Insights
 CVS shows stable performance with moderate upside potential. Valuation ranges vary across models, with DCF suggesting the highest upside.
