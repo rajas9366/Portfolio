@@ -15,7 +15,7 @@ A comprehensive model that creates a diversified bond portfolio optimized for du
 Project 1_Portfolio Creation.xlsx
 
 2. Hedging Rate Exposure:
--Applies real hedging techniques using bond futures and swaps to reduce interest rate sensitivity.
+Applies real hedging techniques using bond futures and swaps to reduce interest rate sensitivity.
 
 Project 2_Hedging.xlsx
 
