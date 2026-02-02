@@ -2,7 +2,7 @@
 
 📍 MS in Financial Mathematics – SUNY University at Buffalo  
 📊 Passionate about finance, forecasting, and translating data into strategic insights  
-🔗 [LinkedIn](www.linkedin.com/in/rajas-koranne) • 📄 [Resume](./resume.pdf)
+🔗 [LinkedIn](www.linkedin.com/in/rajas-koranne) • 🌐 [Website](https://refreshed-shower-586298.framer.app/)
 
 ---
 
