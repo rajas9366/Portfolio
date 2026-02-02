@@ -22,12 +22,11 @@ This project analyzes CVS Health Corporation’s financial performance and valua
 ## 🛠 Tools Used
 - Microsoft Excel
 - Financial modeling techniques
-- Visuals: Football Field Chart, Net Income bar chart
+- Data for CVS Health's financial reports can be found here: https://www.sec.gov/edgar/search/#/dateRange=1y&category=custom&ciks=0000064803&entityName=CVS%2520HEALTH%2520Corp%2520(CVS)%2520(CIK%25200000064803)&forms=10-K%252C10-Q
 
 ## 📁 Files
 - `CVS_Financial_Model.xlsx`: Full financial model
-- `Football Field Chart.png`: Valuation comparison
-- `Revenue Projection.png`: Forecast visualization
+- `CVS_Forecast`: Projected business performance
 
 ## 📌 Insights
 CVS shows stable performance with moderate upside potential. Valuation ranges vary across models, with DCF suggesting the highest upside.
