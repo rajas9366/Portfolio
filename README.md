@@ -1,4 +1,4 @@
-# # 🎓 FINANCE & ANALYTICS PORTFOLIO - RAJAS KORANNE
+# 🎓 FINANCE & ANALYTICS PORTFOLIO - RAJAS KORANNE
 
 Welcome to my portfolio! This thread contains some of my best work since 2021. 
 
