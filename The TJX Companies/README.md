@@ -40,19 +40,6 @@ The engine runs **1,000+ Monte Carlo simulations** per scenario and produces a f
 - Freight multipliers scale with macro conditions  
 - Captures supply‑chain inflation and crisis effects
 
-### **✔ Profit & Margin Engine**
-Profit is computed as:
-
-\[
-\text{Profit} = \text{Retail Revenue} - \text{Inventory Cost} - \text{Freight Cost} - \text{Unhedged FX Impact}
-\]
-
-Where:
-
-\[
-\text{Unhedged FX Impact} = (\text{Inventory} + \text{Freight}) \cdot (1 - \text{Hedge Ratio}) \cdot (\text{FX Sim} - \text{Hedge Rate})
-\]
-
 ### **✔ Simulated Net Profit at 95% VaR**
 Automatically calculates the 5th‑percentile profit outcome across all trials.
 
