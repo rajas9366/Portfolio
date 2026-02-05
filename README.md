@@ -1,4 +1,4 @@
-# Financial Modeling & Analysis
+# Financial Modeling & Analytics
 
 Welcome to my Financial Modeling folder. Let’s decode the numbers behind business strategy!
 
