@@ -91,7 +91,7 @@ Each run produces:
 
 ## 🧠 **Skills Demonstrated**
 
-- Financial modeling (FX, hedging, VaR)  
+- Financial modeling (FX hedging, VaR)  
 - Monte Carlo simulation  
 - VBA automation  
 - Scenario design & stress testing  
