@@ -110,5 +110,3 @@ Potential extensions include:
 - Correlated FX paths  
 
 ---
-
- it.
