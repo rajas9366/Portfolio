@@ -1,4 +1,4 @@
-# CVS Financial Modeling Project (2021–2025)
+# The Home Depot Financial Modeling Project (2021–2025)
 
 ## 📊 Overview
 This project analyzes The Home Depot’s financial performance and valuation using Excel-based modeling techniques. It includes multi-year financials, projections, and valuation methods such as DCF, EPV, DDM, and trading multiples.
