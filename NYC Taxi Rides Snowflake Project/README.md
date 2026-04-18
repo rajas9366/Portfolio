@@ -41,10 +41,13 @@ SNOWFLAKE_ROLE=ACCOUNTADMIN
 SNOWFLAKE_WAREHOUSE=COMPUTE_WH
 SNOWFLAKE_DATABASE=NYC_DATA
 SNOWFLAKE_SCHEMA=PUBLIC
-2. Install Dependencies
-Bash
-pip install snowflake-snowpark-python pandas python-dotenv lightgbm
-3. Run the Pipeline
+
+2. Install Dependencies:
+
+Bash: pip install snowflake-snowpark-python pandas python-dotenv lightgbm
+
+3. Run the Pipeline:
+
 Execute in order:
 
 python filter_data.py — Cleans the raw data.
