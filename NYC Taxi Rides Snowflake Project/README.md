@@ -1,7 +1,3 @@
-1. File Name: README.md
-Copy and paste this entire block:
-
-Markdown
 # NYC Taxi Demand Prediction Pipeline 🚖
 
 An end-to-end Data Engineering and Machine Learning project leveraging **Snowflake**, **Snowpark**, and **LightGBM** to forecast taxi demand across New York City.
