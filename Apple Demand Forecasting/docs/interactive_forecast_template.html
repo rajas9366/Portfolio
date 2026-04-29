@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Apple Quarterly Revenue Forecast — Interactive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  Interactive forecast explorer. Self-contained: data is embedded inline,
+  Plotly is pulled from a CDN. To regenerate: run scripts/build_interactive.py
+  after running scripts/run_forecast.py.
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js"></script>
+<script>
+  // If cdnjs is blocked (some corporate networks, ad blockers, etc.),
+  // fall back to Plotly's own CDN. We do this synchronously via document.write
+  // so the fallback loads before the rendering script below runs.
+  if (typeof Plotly === 'undefined') {
+    document.write('\x3Cscript src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8">\x3C/script>');
+  }
+</script>
+<style>
+  :root {
+    --navy: #1E2761;
+    --ice:  #CADCFC;
+    --slate: #37456E;
+    --muted: #64748B;
+    --faint: #F1F5F9;
+    --coral: #E76F51;
+    --teal:  #2A9D8F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: var(--slate);
+    line-height: 1.45;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 32px 40px; }
+  h1 { font-size: 22px; color: var(--navy); margin: 0 0 4px; font-weight: 600; }
+  .subtitle { color: var(--muted); font-size: 13px; margin: 0 0 20px; font-style: italic; }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    padding: 14px 16px;
+    background: var(--faint);
+    border-radius: 8px;
+    border: 1px solid #E2E8F0;
+    margin-bottom: 18px;
+  }
+  .control-group { display: flex; align-items: center; gap: 8px; }
+  .control-group label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  select {
+    font-size: 13px;
+    padding: 6px 24px 6px 10px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    background: #fff;
+    color: var(--navy);
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 200px;
+  }
+  select:focus { outline: 2px solid var(--ice); outline-offset: 1px; }
+
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    color: var(--slate);
+  }
+  .toggle input { cursor: pointer; }
+
+  #chart { width: 100%; height: 460px; }
+
+  .info-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .stat {
+    background: var(--faint);
+    border-left: 3px solid var(--navy);
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+  }
+  .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+  .stat-value { font-size: 18px; color: var(--navy); font-weight: 600; margin-top: 2px; }
+  .stat-detail { font-size: 11px; color: var(--muted); font-style: italic; margin-top: 2px; }
+  .stat.alert { border-left-color: var(--coral); }
+  .stat.alert .stat-value { color: var(--coral); }
+
+  .footnote {
+    margin-top: 22px;
+    font-size: 11px;
+    color: var(--muted);
+    border-top: 1px solid #E2E8F0;
+    padding-top: 14px;
+  }
+  .footnote code {
+    background: var(--faint); padding: 1px 5px; border-radius: 3px;
+    font-size: 10px; color: var(--navy);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Apple quarterly revenue — interactive forecast explorer</h1>
+  <p class="subtitle" id="subtitle">Q2 / Q3 / Q4 FY2026 forecast across all 10 series. Hover any point for exact values; toggle individual series in the legend.</p>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="series">Series</label>
+      <select id="series"></select>
+    </div>
+    <label class="toggle">
+      <input type="checkbox" id="show-models">
+      <span>Show all 6 base models</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" id="show-ci" checked>
+      <span>80% confidence band</span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" id="show-raw">
+      <span>Compare raw vs bias-corrected forecast</span>
+    </label>
+  </div>
+
+  <div id="chart" role="img" aria-label="Interactive Apple revenue forecast chart"></div>
+
+  <div class="info-panel" id="info"></div>
+
+  <p class="footnote">
+    History and forecast data extracted from Apple's FY2025 Form 10-K and four 10-Q filings (Q1 FY25 – Q1 FY26),
+    reconciled to the dollar. Forecast model: 6-model walk-forward ensemble with inverse-MAPE weights and bootstrap
+    intervals. See <code>docs/methodology.md</code> for the full methodology writeup.
+  </p>
+</div>
+
+<script id="forecast-data" type="application/json">__DATA_PLACEHOLDER__</script>
+
+<script>
+(function() {
+  // Surface a helpful message if both CDN attempts failed (network blocked, etc.)
+  if (typeof Plotly === 'undefined') {
+    document.getElementById('chart').innerHTML =
+      '<div style="padding: 32px; border: 1px solid #FCA5A5; background: #FEF2F2; ' +
+      'border-radius: 8px; color: #991B1B; font-size: 14px; line-height: 1.5;">' +
+      '<strong>Plotly failed to load from the CDN.</strong><br>' +
+      'This file requires an internet connection (or for cdnjs.cloudflare.com / cdn.plot.ly to be reachable). ' +
+      'If you are on a network that blocks public CDNs, the static panel chart at ' +
+      '<code>docs/figures/03_forecast_panels.png</code> shows the same data.' +
+      '</div>';
+    return;
+  }
+
+  const DATA = JSON.parse(document.getElementById('forecast-data').textContent);
+
+  // ---- color tokens (must match CSS) ------------------------------------
+  const NAVY  = '#1E2761';
+  const TEAL  = '#2A9D8F';
+  const CORAL = '#E76F51';
+  const ICE   = '#CADCFC';
+  const SLATE = '#37456E';
+  const MUTED = '#94A3B8';
+
+  // Base model colors — distinct but muted so they don't overpower the main series
+  const MODEL_COLORS = {
+    naive_last:     '#94A3B8',
+    seasonal_naive: '#A78BFA',
+    cagr:           '#0EA5E9',
+    holt_winters:   '#10B981',
+    ridge:          '#F59E0B',
+    gbm:            '#EC4899',
+  };
+
+  // ---- DOM ---------------------------------------------------------------
+  const seriesSelect = document.getElementById('series');
+  const showModels   = document.getElementById('show-models');
+  const showCI       = document.getElementById('show-ci');
+  const showRaw      = document.getElementById('show-raw');
+  const infoPanel    = document.getElementById('info');
+
+  // ---- populate the series dropdown -------------------------------------
+  // Group by type so segments and products are visually separated
+  const seg = DATA.series_list.filter(s => DATA.series[s].type === 'segment');
+  const prd = DATA.series_list.filter(s => DATA.series[s].type === 'product');
+
+  const segGroup = document.createElement('optgroup');
+  segGroup.label = 'Segments';
+  seg.forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s; opt.textContent = s;
+    segGroup.appendChild(opt);
+  });
+  seriesSelect.appendChild(segGroup);
+
+  const prdGroup = document.createElement('optgroup');
+  prdGroup.label = 'Products';
+  prd.forEach(s => {
+    const opt = document.createElement('option');
+    opt.value = s; opt.textContent = s;
+    prdGroup.appendChild(opt);
+  });
+  seriesSelect.appendChild(prdGroup);
+
+  // Default to iPhone — the most interesting story
+  seriesSelect.value = 'iPhone';
+
+  // ---- formatters -------------------------------------------------------
+  const fmtBn = v => '$' + (v / 1000).toFixed(1) + 'B';
+  const fmtPct = v => (v >= 0 ? '+' : '') + v.toFixed(1) + '%';
+
+  // ---- main render ------------------------------------------------------
+  function render() {
+    const seriesId = seriesSelect.value;
+    const data = DATA.series[seriesId];
+
+    // x-axis: history periods + all forecast periods
+    const histX = data.history.map(p => p.period);
+    const histY = data.history.map(p => p.value);
+
+    const fcPeriods = data.forecasts.map(f => f.period);
+    const allX = [...histX, ...fcPeriods];
+
+    const traces = [];
+
+    // ---- 1. Historical actuals --------------------------------
+    traces.push({
+      name: 'Actual',
+      x: histX,
+      y: histY,
+      mode: 'lines+markers',
+      type: 'scatter',
+      line: { color: NAVY, width: 2.5 },
+      marker: { color: NAVY, size: 8 },
+      hovertemplate:
+        '<b>%{x}</b><br>' +
+        'Actual: <b>%{customdata}</b>' +
+        '<extra></extra>',
+      customdata: histY.map(fmtBn),
+    });
+
+    // ---- 2. Ensemble backtest --------------------------------
+    if (!showModels.checked) {
+      const ens = data.ensemble_backtest;
+      traces.push({
+        name: 'Ensemble (backtest)',
+        x: ens.map(r => r.period),
+        y: ens.map(r => r.predicted),
+        mode: 'lines+markers',
+        type: 'scatter',
+        line: { color: CORAL, width: 1.5, dash: 'dash' },
+        marker: { color: CORAL, size: 7, symbol: 'square' },
+        hovertemplate:
+          '<b>%{x}</b><br>' +
+          'Ensemble predicted: <b>%{customdata[0]}</b><br>' +
+          'Actual: %{customdata[1]}<br>' +
+          'Error: <b>%{customdata[2]}</b>' +
+          '<extra></extra>',
+        customdata: ens.map(r => [
+          fmtBn(r.predicted),
+          fmtBn(r.actual),
+          fmtPct(100 * (r.predicted - r.actual) / r.actual),
+        ]),
+      });
+    }
+
+    // ---- 3. Individual base models (alternative view) -------
+    if (showModels.checked) {
+      Object.entries(data.base_model_backtest).forEach(([modelName, preds]) => {
+        traces.push({
+          name: modelName.replace('_', ' '),
+          x: preds.map(r => r.period),
+          y: preds.map(r => r.predicted),
+          mode: 'lines+markers',
+          type: 'scatter',
+          line:   { color: MODEL_COLORS[modelName], width: 1, dash: 'dot' },
+          marker: { color: MODEL_COLORS[modelName], size: 5 },
+          opacity: 0.85,
+          hovertemplate:
+            '<b>%{x}</b><br>' +
+            modelName.replace('_', ' ') + ': <b>%{customdata}</b>' +
+            '<extra></extra>',
+          customdata: preds.map(r => fmtBn(r.predicted)),
+        });
+      });
+    }
+
+    // ---- 4. 80% confidence bands — one per forecast horizon -----
+    // Bands widen with horizon (sqrt(h) scaling), so each gets its own line.
+    if (showCI.checked) {
+      data.forecasts.forEach((f, idx) => {
+        traces.push({
+          name: idx === 0 ? '80% CI' : undefined,           // legend entry once
+          x: [f.period, f.period],
+          y: [f.lower_80, f.upper_80],
+          mode: 'lines',
+          type: 'scatter',
+          line: { color: TEAL, width: 12 },
+          opacity: 0.25,
+          hoverinfo: 'skip',
+          showlegend: idx === 0,
+        });
+        // Invisible markers at the band endpoints to anchor hover info
+        traces.push({
+          x: [f.period, f.period],
+          y: [f.lower_80, f.upper_80],
+          mode: 'markers',
+          type: 'scatter',
+          marker: { color: TEAL, size: 6, opacity: 0.7 },
+          showlegend: false,
+          hovertemplate:
+            '<b>' + f.period + '</b><br>' +
+            '80% CI bound: <b>%{customdata}</b>' +
+            '<extra></extra>',
+          customdata: [fmtBn(f.lower_80), fmtBn(f.upper_80)],
+        });
+      });
+    }
+
+    // ---- 5. Forecast trajectory: line connecting the diamonds ---
+    // This makes the multi-horizon trend visually clear.
+    traces.push({
+      name: 'Forecast (bias-corrected)',
+      x: fcPeriods,
+      y: data.forecasts.map(f => f.point),
+      mode: 'lines+markers',
+      type: 'scatter',
+      line: { color: TEAL, width: 2 },
+      marker: {
+        color: TEAL, size: 16, symbol: 'diamond',
+        line: { color: '#fff', width: 2 },
+      },
+      hovertemplate:
+        '<b>%{x} Forecast</b><br>' +
+        'Point: <b>%{customdata[0]}</b><br>' +
+        '80% interval: %{customdata[1]} – %{customdata[2]}<br>' +
+        'Implied YoY: <b>%{customdata[3]}</b><br>' +
+        'Horizon: %{customdata[4]} quarter(s) ahead' +
+        '<extra></extra>',
+      customdata: data.forecasts.map(f => [
+        fmtBn(f.point),
+        fmtBn(f.lower_80),
+        fmtBn(f.upper_80),
+        (() => {
+          const target = yoyTargetValue(f.period, data.history);
+          if (target === null) return '—';
+          return fmtPct(100 * (f.point - target) / target);
+        })(),
+        f.horizon,
+      ]),
+    });
+
+    // ---- 6. Optional: raw forecasts for comparison ------------
+    if (showRaw.checked) {
+      traces.push({
+        name: 'Forecast (raw, no bias correction)',
+        x: fcPeriods,
+        y: data.forecasts.map(f => f.raw),
+        mode: 'lines+markers',
+        type: 'scatter',
+        line: { color: TEAL, width: 1, dash: 'dot' },
+        marker: {
+          color: '#fff', size: 14, symbol: 'diamond-open',
+          line: { color: TEAL, width: 2 },
+        },
+        hovertemplate:
+          '<b>%{x} Forecast (raw)</b><br>' +
+          'Raw point: <b>%{customdata[0]}</b><br>' +
+          'Bias correction applied: <b>%{customdata[1]}</b>' +
+          '<extra></extra>',
+        customdata: data.forecasts.map(f => [
+          fmtBn(f.raw),
+          fmtBn(f.bias_correction),
+        ]),
+      });
+    }
+
+    // ---- layout --------------------------------------------------------
+    const layout = {
+      autosize: true,
+      height: 460,
+      margin: { l: 60, r: 30, t: 16, b: 50 },
+      xaxis: {
+        type: 'category',
+        categoryorder: 'array',
+        categoryarray: allX,
+        tickangle: -25,
+        gridcolor: '#F1F5F9',
+        zeroline: false,
+        title: { text: '', font: { size: 11 } },
+      },
+      yaxis: {
+        title: { text: 'Net sales ($M)', font: { size: 11, color: MUTED } },
+        gridcolor: '#F1F5F9',
+        zeroline: false,
+        tickfont: { color: SLATE },
+        tickformat: ',.0f',
+      },
+      hovermode: 'closest',
+      legend: {
+        orientation: 'h',
+        x: 0.5, xanchor: 'center',
+        y: -0.18, yanchor: 'top',
+        font: { size: 11 },
+        bgcolor: 'rgba(255,255,255,0)',
+      },
+      plot_bgcolor:  '#fff',
+      paper_bgcolor: '#fff',
+      shapes: [
+        // Faint vertical separator marking the boundary between history and forecast
+        {
+          type: 'line',
+          xref: 'x', yref: 'paper',
+          x0: histX.length - 0.5, x1: histX.length - 0.5,
+          y0: 0, y1: 1,
+          line: { color: '#CBD5E1', width: 1, dash: 'dot' },
+        },
+      ],
+      annotations: [
+        {
+          xref: 'x', yref: 'paper',
+          x: histX.length - 0.5, y: 1,
+          text: 'forecast →',
+          showarrow: false,
+          xanchor: 'left', yanchor: 'top',
+          font: { size: 10, color: MUTED, style: 'italic' },
+          xshift: 4,
+        },
+      ],
+    };
+
+    Plotly.react('chart', traces, layout, {
+      displaylogo: false,
+      responsive: true,
+      modeBarButtonsToRemove: ['select2d', 'lasso2d', 'autoScale2d'],
+    });
+
+    // ---- update info panel below the chart -----------------------
+    renderInfo(data);
+  }
+
+  // Look up the same-quarter-prior-year value from history, by matching
+  // on the quarter suffix. e.g. "2026-Q3" → look for "2025-Q3" in history.
+  function yoyTargetValue(forecastPeriod, history) {
+    const m = forecastPeriod.match(/^(\d{4})-(Q\d)$/);
+    if (!m) return null;
+    const targetPeriod = (parseInt(m[1]) - 1) + '-' + m[2];
+    const target = history.find(p => p.period === targetPeriod);
+    return target ? target.value : null;
+  }
+
+  function renderInfo(data) {
+    const ch = data.champion;
+
+    // One card per forecast horizon, plus a champion-model card at the end
+    const cards = data.forecasts.map(f => {
+      const target = yoyTargetValue(f.period, data.history);
+      const yoy = target === null ? null : 100 * (f.point - target) / target;
+      const ciWidth = f.upper_80 - f.lower_80;
+      return {
+        label:  f.period + ' forecast',
+        value:  fmtBn(f.point),
+        detail: (yoy !== null ? 'YoY ' + fmtPct(yoy) + ' · ' : '') +
+                'CI: ' + fmtBn(f.lower_80) + '–' + fmtBn(f.upper_80) +
+                ' (width ' + fmtBn(ciWidth) + ')',
+        alert:  Math.abs(f.bias_correction) > 1000,
+      };
+    });
+
+    cards.push({
+      label:  'Champion model',
+      value:  ch.model.replace('_', ' '),
+      detail: 'Backtest MAPE: ' + ch.mape_pct.toFixed(2) + '% · Bias correction: ' +
+              (data.forecasts[0].bias_correction >= 0 ? '+' : '') +
+              fmtBn(data.forecasts[0].bias_correction).replace('$-', '-$'),
+    });
+
+    infoPanel.innerHTML = cards.map(c =>
+      '<div class="stat' + (c.alert ? ' alert' : '') + '">' +
+        '<div class="stat-label">' + c.label + '</div>' +
+        '<div class="stat-value">' + c.value + '</div>' +
+        (c.detail ? '<div class="stat-detail">' + c.detail + '</div>' : '') +
+      '</div>'
+    ).join('');
+  }
+
+  // ---- bind events -----------------------------------------------------
+  seriesSelect.addEventListener('change', render);
+  showModels.addEventListener('change', render);
+  showCI.addEventListener('change', render);
+  showRaw.addEventListener('change', render);
+
+  // initial render
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+series,champion_model,champion_mape,champion_mae,champion_rmse,n_obs,n_backtest
+Americas,holt_winters,7.544,3496.8,3606.1,9,4
+Europe,seasonal_naive,8.656,2631.2,3053.2,9,4
+Greater China,seasonal_naive,9.421,2141.0,3536.3,9,4
+Japan,seasonal_naive,10.317,714.2,746.3,9,4
+Mac,cagr,5.028,412.5,429.9,9,4
+Rest of Asia Pacific,holt_winters,10.727,905.3,948.2,9,4
+Services,cagr,1.212,350.2,409.0,9,4
+Wearables Home and Accessories,holt_winters,3.784,285.6,398.4,9,4
+iPad,holt_winters,6.515,443.2,540.5,9,4
+iPhone,holt_winters,8.454,5304.3,6830.7,9,4

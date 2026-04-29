@@ -1,0 +1,281 @@
+series,model,period,actual,predicted
+Americas,naive_last,2025-Q2,40315.0,52648.0
+Americas,naive_last,2025-Q3,41198.0,40315.0
+Americas,naive_last,2025-Q4,44192.0,41198.0
+Americas,naive_last,2026-Q1,58529.0,44192.0
+Americas,seasonal_naive,2025-Q2,40315.0,37273.0
+Americas,seasonal_naive,2025-Q3,41198.0,37678.0
+Americas,seasonal_naive,2025-Q4,44192.0,41664.0
+Americas,seasonal_naive,2026-Q1,58529.0,52648.0
+Americas,cagr,2025-Q2,40315.0,46130.53906748532
+Americas,cagr,2025-Q3,41198.0,43007.99493563039
+Americas,cagr,2025-Q4,44192.0,41984.97038069555
+Americas,cagr,2026-Q1,58529.0,42897.60495569073
+Americas,holt_winters,2025-Q2,40315.0,37273.0
+Americas,holt_winters,2025-Q3,41198.0,37678.0
+Americas,holt_winters,2025-Q4,44192.0,41664.0
+Americas,holt_winters,2026-Q1,58529.0,53631.89012306332
+Americas,ridge,2025-Q2,40315.0,37273.0
+Americas,ridge,2025-Q3,41198.0,37678.0
+Americas,ridge,2025-Q4,44192.0,41322.94921102594
+Americas,ridge,2026-Q1,58529.0,48167.10503466913
+Americas,gbm,2025-Q2,40315.0,37273.0
+Americas,gbm,2025-Q3,41198.0,37678.0
+Americas,gbm,2025-Q4,44192.0,40890.15922891372
+Americas,gbm,2026-Q1,58529.0,47598.58498403311
+Americas,ensemble,2025-Q2,40315.0,40072.325672560335
+Americas,ensemble,2025-Q3,41198.0,38666.27147166335
+Americas,ensemble,2025-Q4,44192.0,41477.297961872144
+Americas,ensemble,2026-Q1,58529.0,49122.8217713817
+Europe,naive_last,2025-Q2,24454.0,33861.0
+Europe,naive_last,2025-Q3,24014.0,24454.0
+Europe,naive_last,2025-Q4,28703.0,24014.0
+Europe,naive_last,2026-Q1,38146.0,28703.0
+Europe,seasonal_naive,2025-Q2,24454.0,24123.0
+Europe,seasonal_naive,2025-Q3,24014.0,21884.0
+Europe,seasonal_naive,2025-Q4,28703.0,24924.0
+Europe,seasonal_naive,2026-Q1,38146.0,33861.0
+Europe,cagr,2025-Q2,24454.0,28755.347166174623
+Europe,cagr,2025-Q3,24014.0,26460.53357694226
+Europe,cagr,2025-Q4,28703.0,25076.20175079058
+Europe,cagr,2026-Q1,38146.0,26596.221278050372
+Europe,holt_winters,2025-Q2,24454.0,24123.0
+Europe,holt_winters,2025-Q3,24014.0,21884.0
+Europe,holt_winters,2025-Q4,28703.0,24924.0
+Europe,holt_winters,2026-Q1,38146.0,33588.83704623471
+Europe,ridge,2025-Q2,24454.0,24123.0
+Europe,ridge,2025-Q3,24014.0,21884.0
+Europe,ridge,2025-Q4,28703.0,24544.391500385325
+Europe,ridge,2026-Q1,38146.0,30661.59217619323
+Europe,gbm,2025-Q2,24454.0,24123.0
+Europe,gbm,2025-Q3,24014.0,21884.0
+Europe,gbm,2025-Q4,28703.0,24275.64880721048
+Europe,gbm,2026-Q1,38146.0,31061.90426251759
+Europe,ensemble,2025-Q2,24454.0,25560.828684508637
+Europe,ensemble,2025-Q3,24014.0,22631.869801847322
+Europe,ensemble,2025-Q4,28703.0,24673.566692885317
+Europe,ensemble,2026-Q1,38146.0,31459.259994409316
+Greater China,naive_last,2025-Q2,16002.0,18513.0
+Greater China,naive_last,2025-Q3,15369.0,16002.0
+Greater China,naive_last,2025-Q4,14493.0,15369.0
+Greater China,naive_last,2026-Q1,25526.0,14493.0
+Greater China,seasonal_naive,2025-Q2,16002.0,16372.0
+Greater China,seasonal_naive,2025-Q3,15369.0,14728.0
+Greater China,seasonal_naive,2025-Q4,14493.0,15033.0
+Greater China,seasonal_naive,2026-Q1,25526.0,18513.0
+Greater China,cagr,2025-Q2,16002.0,15393.554196554527
+Greater China,cagr,2025-Q3,15369.0,15298.901849412025
+Greater China,cagr,2025-Q4,14493.0,14938.17614925751
+Greater China,cagr,2026-Q1,25526.0,14336.511303568088
+Greater China,holt_winters,2025-Q2,16002.0,16372.0
+Greater China,holt_winters,2025-Q3,15369.0,14728.0
+Greater China,holt_winters,2025-Q4,14493.0,15033.0
+Greater China,holt_winters,2026-Q1,25526.0,18245.658488018813
+Greater China,ridge,2025-Q2,16002.0,16372.0
+Greater China,ridge,2025-Q3,15369.0,14728.0
+Greater China,ridge,2025-Q4,14493.0,15920.479442302872
+Greater China,ridge,2026-Q1,25526.0,16142.929946747325
+Greater China,gbm,2025-Q2,16002.0,16372.0
+Greater China,gbm,2025-Q3,15369.0,14728.0
+Greater China,gbm,2025-Q4,14493.0,16032.946478391877
+Greater China,gbm,2026-Q1,25526.0,16362.688753703953
+Greater China,ensemble,2025-Q2,16002.0,16467.67426719871
+Greater China,ensemble,2025-Q3,15369.0,14966.565690939795
+Greater China,ensemble,2025-Q4,14493.0,15344.024589097191
+Greater China,ensemble,2026-Q1,25526.0,16643.759280702485
+Japan,naive_last,2025-Q2,7298.0,8987.0
+Japan,naive_last,2025-Q3,5782.0,7298.0
+Japan,naive_last,2025-Q4,6636.0,5782.0
+Japan,naive_last,2026-Q1,9413.0,6636.0
+Japan,seasonal_naive,2025-Q2,7298.0,6262.0
+Japan,seasonal_naive,2025-Q3,5782.0,5097.0
+Japan,seasonal_naive,2025-Q4,6636.0,5926.0
+Japan,seasonal_naive,2026-Q1,9413.0,8987.0
+Japan,cagr,2025-Q2,7298.0,7160.822607742752
+Japan,cagr,2025-Q3,5782.0,7425.642273205694
+Japan,cagr,2025-Q4,6636.0,6608.445922520141
+Japan,cagr,2026-Q1,9413.0,6619.353501167503
+Japan,holt_winters,2025-Q2,7298.0,6262.0
+Japan,holt_winters,2025-Q3,5782.0,5097.0
+Japan,holt_winters,2025-Q4,6636.0,5926.0
+Japan,holt_winters,2026-Q1,9413.0,8946.507887462436
+Japan,ridge,2025-Q2,7298.0,6262.0
+Japan,ridge,2025-Q3,5782.0,5097.0
+Japan,ridge,2025-Q4,6636.0,6343.462651030831
+Japan,ridge,2026-Q1,9413.0,7842.193199840062
+Japan,gbm,2025-Q2,7298.0,6262.0
+Japan,gbm,2025-Q3,5782.0,5097.0
+Japan,gbm,2025-Q4,6636.0,6985.855969166306
+Japan,gbm,2026-Q1,9413.0,7952.936274307797
+Japan,ensemble,2025-Q2,7298.0,6639.082782505572
+Japan,ensemble,2025-Q3,5782.0,5625.977360084993
+Japan,ensemble,2025-Q4,6636.0,6274.600519816502
+Japan,ensemble,2026-Q1,9413.0,8038.362895458235
+Mac,naive_last,2025-Q2,7949.0,8987.0
+Mac,naive_last,2025-Q3,8046.0,7949.0
+Mac,naive_last,2025-Q4,8726.0,8046.0
+Mac,naive_last,2026-Q1,8386.0,8726.0
+Mac,seasonal_naive,2025-Q2,7949.0,7451.0
+Mac,seasonal_naive,2025-Q3,8046.0,7009.0
+Mac,seasonal_naive,2025-Q4,8726.0,7744.0
+Mac,seasonal_naive,2026-Q1,8386.0,8987.0
+Mac,cagr,2025-Q2,7949.0,8568.254986214964
+Mac,cagr,2025-Q3,8046.0,8421.211324416356
+Mac,cagr,2025-Q4,8726.0,8387.088760380539
+Mac,cagr,2026-Q1,8386.0,8702.423581149198
+Mac,holt_winters,2025-Q2,7949.0,7451.0
+Mac,holt_winters,2025-Q3,8046.0,7009.0
+Mac,holt_winters,2025-Q4,8726.0,7744.0
+Mac,holt_winters,2026-Q1,8386.0,9046.187446587863
+Mac,ridge,2025-Q2,7949.0,7451.0
+Mac,ridge,2025-Q3,8046.0,7009.0
+Mac,ridge,2025-Q4,8726.0,8053.448818396518
+Mac,ridge,2026-Q1,8386.0,8982.653012121742
+Mac,gbm,2025-Q2,7949.0,7451.0
+Mac,gbm,2025-Q3,8046.0,7009.0
+Mac,gbm,2025-Q4,8726.0,8147.055898081391
+Mac,gbm,2026-Q1,8386.0,8812.42479976271
+Mac,ensemble,2025-Q2,7949.0,8015.608517356767
+Mac,ensemble,2025-Q3,8046.0,7533.333383493473
+Mac,ensemble,2025-Q4,8726.0,8068.341885360282
+Mac,ensemble,2026-Q1,8386.0,8846.897294713059
+Rest of Asia Pacific,naive_last,2025-Q2,7290.0,10291.0
+Rest of Asia Pacific,naive_last,2025-Q3,7673.0,7290.0
+Rest of Asia Pacific,naive_last,2025-Q4,8442.0,7673.0
+Rest of Asia Pacific,naive_last,2026-Q1,12142.0,8442.0
+Rest of Asia Pacific,seasonal_naive,2025-Q2,7290.0,6723.0
+Rest of Asia Pacific,seasonal_naive,2025-Q3,7673.0,6390.0
+Rest of Asia Pacific,seasonal_naive,2025-Q4,8442.0,7383.0
+Rest of Asia Pacific,seasonal_naive,2026-Q1,12142.0,10291.0
+Rest of Asia Pacific,cagr,2025-Q2,7290.0,8310.644039276614
+Rest of Asia Pacific,cagr,2025-Q3,7673.0,7706.536372186622
+Rest of Asia Pacific,cagr,2025-Q4,8442.0,7635.016626980755
+Rest of Asia Pacific,cagr,2026-Q1,12142.0,7969.9903442899895
+Rest of Asia Pacific,holt_winters,2025-Q2,7290.0,6723.0
+Rest of Asia Pacific,holt_winters,2025-Q3,7673.0,6390.0
+Rest of Asia Pacific,holt_winters,2025-Q4,8442.0,7383.0
+Rest of Asia Pacific,holt_winters,2026-Q1,12142.0,11429.669119114751
+Rest of Asia Pacific,ridge,2025-Q2,7290.0,6723.0
+Rest of Asia Pacific,ridge,2025-Q3,7673.0,6390.0
+Rest of Asia Pacific,ridge,2025-Q4,8442.0,7434.0951481478505
+Rest of Asia Pacific,ridge,2026-Q1,12142.0,9331.503905020958
+Rest of Asia Pacific,gbm,2025-Q2,7290.0,6723.0
+Rest of Asia Pacific,gbm,2025-Q3,7673.0,6390.0
+Rest of Asia Pacific,gbm,2025-Q4,8442.0,7467.328929058136
+Rest of Asia Pacific,gbm,2026-Q1,12142.0,9138.803355482507
+Rest of Asia Pacific,ensemble,2025-Q2,7290.0,7381.787952373266
+Rest of Asia Pacific,ensemble,2025-Q3,7673.0,6706.441124761064
+Rest of Asia Pacific,ensemble,2025-Q4,8442.0,7478.207934233876
+Rest of Asia Pacific,ensemble,2026-Q1,12142.0,9622.238456494451
+Services,naive_last,2025-Q2,26645.0,26340.0
+Services,naive_last,2025-Q3,27423.0,26645.0
+Services,naive_last,2025-Q4,28750.0,27423.0
+Services,naive_last,2026-Q1,30013.0,28750.0
+Services,seasonal_naive,2025-Q2,26645.0,23867.0
+Services,seasonal_naive,2025-Q3,27423.0,24213.0
+Services,seasonal_naive,2025-Q4,28750.0,24972.0
+Services,seasonal_naive,2026-Q1,30013.0,26340.0
+Services,cagr,2025-Q2,26645.0,26833.45702158927
+Services,cagr,2025-Q3,27423.0,27538.382914529695
+Services,cagr,2025-Q4,28750.0,28298.380910373937
+Services,cagr,2026-Q1,30013.0,29367.66947732346
+Services,holt_winters,2025-Q2,26645.0,23867.0
+Services,holt_winters,2025-Q3,27423.0,24213.0
+Services,holt_winters,2025-Q4,28750.0,24972.0
+Services,holt_winters,2026-Q1,30013.0,27794.371372885325
+Services,ridge,2025-Q2,26645.0,23867.0
+Services,ridge,2025-Q3,27423.0,24213.0
+Services,ridge,2025-Q4,28750.0,27514.154890896272
+Services,ridge,2026-Q1,30013.0,28993.783065946373
+Services,gbm,2025-Q2,26645.0,23867.0
+Services,gbm,2025-Q3,27423.0,24213.0
+Services,gbm,2025-Q4,28750.0,27277.618120950065
+Services,gbm,2026-Q1,30013.0,28463.675440700103
+Services,ensemble,2025-Q2,26645.0,25914.093773010027
+Services,ensemble,2025-Q3,27423.0,26440.209089359076
+Services,ensemble,2025-Q4,28750.0,27601.18818123942
+Services,ensemble,2026-Q1,30013.0,28886.31179938817
+Wearables Home and Accessories,naive_last,2025-Q2,7522.0,11747.0
+Wearables Home and Accessories,naive_last,2025-Q3,7404.0,7522.0
+Wearables Home and Accessories,naive_last,2025-Q4,9013.0,7404.0
+Wearables Home and Accessories,naive_last,2026-Q1,11493.0,9013.0
+Wearables Home and Accessories,seasonal_naive,2025-Q2,7522.0,7913.0
+Wearables Home and Accessories,seasonal_naive,2025-Q3,7404.0,8097.0
+Wearables Home and Accessories,seasonal_naive,2025-Q4,9013.0,9042.0
+Wearables Home and Accessories,seasonal_naive,2026-Q1,11493.0,11747.0
+Wearables Home and Accessories,cagr,2025-Q2,7522.0,9883.56834651181
+Wearables Home and Accessories,cagr,2025-Q3,7404.0,8320.367064497257
+Wearables Home and Accessories,cagr,2025-Q4,9013.0,7560.090754874171
+Wearables Home and Accessories,cagr,2026-Q1,11493.0,7917.916017490906
+Wearables Home and Accessories,holt_winters,2025-Q2,7522.0,7913.0
+Wearables Home and Accessories,holt_winters,2025-Q3,7404.0,8097.0
+Wearables Home and Accessories,holt_winters,2025-Q4,9013.0,9042.0
+Wearables Home and Accessories,holt_winters,2026-Q1,11493.0,11522.237247635934
+Wearables Home and Accessories,ridge,2025-Q2,7522.0,7913.0
+Wearables Home and Accessories,ridge,2025-Q3,7404.0,8097.0
+Wearables Home and Accessories,ridge,2025-Q4,9013.0,7426.916460173892
+Wearables Home and Accessories,ridge,2026-Q1,11493.0,10518.877301973664
+Wearables Home and Accessories,gbm,2025-Q2,7522.0,7913.0
+Wearables Home and Accessories,gbm,2025-Q3,7404.0,8097.0
+Wearables Home and Accessories,gbm,2025-Q4,9013.0,7884.836896595274
+Wearables Home and Accessories,gbm,2026-Q1,11493.0,10122.869179091338
+Wearables Home and Accessories,ensemble,2025-Q2,7522.0,8224.549403010196
+Wearables Home and Accessories,ensemble,2025-Q3,7404.0,8079.350582649149
+Wearables Home and Accessories,ensemble,2025-Q4,9013.0,8519.058859237344
+Wearables Home and Accessories,ensemble,2026-Q1,11493.0,10946.823737542507
+iPad,naive_last,2025-Q2,6402.0,8088.0
+iPad,naive_last,2025-Q3,6581.0,6402.0
+iPad,naive_last,2025-Q4,6952.0,6581.0
+iPad,naive_last,2026-Q1,8595.0,6952.0
+iPad,seasonal_naive,2025-Q2,6402.0,5559.0
+iPad,seasonal_naive,2025-Q3,6581.0,7162.0
+iPad,seasonal_naive,2025-Q4,6952.0,6950.0
+iPad,seasonal_naive,2026-Q1,8595.0,8088.0
+iPad,cagr,2025-Q2,6402.0,8038.28582818909
+iPad,cagr,2025-Q3,6581.0,7264.863121049647
+iPad,cagr,2025-Q4,6952.0,6990.918447981781
+iPad,cagr,2026-Q1,8595.0,7023.654819722438
+iPad,holt_winters,2025-Q2,6402.0,5559.0
+iPad,holt_winters,2025-Q3,6581.0,7162.0
+iPad,holt_winters,2025-Q4,6952.0,6950.0
+iPad,holt_winters,2026-Q1,8595.0,8248.081081444889
+iPad,ridge,2025-Q2,6402.0,5559.0
+iPad,ridge,2025-Q3,6581.0,7162.0
+iPad,ridge,2025-Q4,6952.0,6753.8960298154325
+iPad,ridge,2026-Q1,8595.0,7479.045946346148
+iPad,gbm,2025-Q2,6402.0,5559.0
+iPad,gbm,2025-Q3,6581.0,7162.0
+iPad,gbm,2025-Q4,6952.0,6509.812968045522
+iPad,gbm,2026-Q1,8595.0,7280.9438819777215
+iPad,ensemble,2025-Q2,6402.0,6135.516244336298
+iPad,ensemble,2025-Q3,6581.0,7085.186292389897
+iPad,ensemble,2025-Q4,6952.0,6816.523508418174
+iPad,ensemble,2026-Q1,8595.0,7657.376504395952
+iPhone,naive_last,2025-Q2,46841.0,69138.0
+iPhone,naive_last,2025-Q3,44582.0,46841.0
+iPhone,naive_last,2025-Q4,49025.0,44582.0
+iPhone,naive_last,2026-Q1,85269.0,49025.0
+iPhone,seasonal_naive,2025-Q2,46841.0,45963.0
+iPhone,seasonal_naive,2025-Q3,44582.0,39296.0
+iPhone,seasonal_naive,2025-Q4,49025.0,46222.0
+iPhone,seasonal_naive,2026-Q1,85269.0,69138.0
+iPhone,cagr,2025-Q2,46841.0,52423.80660729492
+iPhone,cagr,2025-Q3,44582.0,48580.87217938766
+iPhone,cagr,2025-Q4,49025.0,45467.390033018586
+iPhone,cagr,2026-Q1,85269.0,45984.77466851755
+iPhone,holt_winters,2025-Q2,46841.0,45963.0
+iPhone,holt_winters,2025-Q3,44582.0,39296.0
+iPhone,holt_winters,2025-Q4,49025.0,46222.0
+iPhone,holt_winters,2026-Q1,85269.0,73018.92137726981
+iPhone,ridge,2025-Q2,46841.0,45963.0
+iPhone,ridge,2025-Q3,44582.0,39296.0
+iPhone,ridge,2025-Q4,49025.0,57160.182874831284
+iPhone,ridge,2026-Q1,85269.0,59525.29519834123
+iPhone,gbm,2025-Q2,46841.0,45963.0
+iPhone,gbm,2025-Q3,44582.0,39296.0
+iPhone,gbm,2025-Q4,49025.0,49790.287550933936
+iPhone,gbm,2026-Q1,85269.0,59987.50139669427
+iPhone,ensemble,2025-Q2,46841.0,48596.499354629545
+iPhone,ensemble,2025-Q3,44582.0,40977.04123317106
+iPhone,ensemble,2025-Q4,49025.0,48215.90857318997
+iPhone,ensemble,2026-Q1,85269.0,62731.726654457205

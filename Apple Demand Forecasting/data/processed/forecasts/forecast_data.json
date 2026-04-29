@@ -1,0 +1,2095 @@
+{
+  "meta": {
+    "title": "Apple Quarterly Revenue Forecast",
+    "subtitle": "Interactive view across all 10 series",
+    "forecast_periods": [
+      "2026-Q2",
+      "2026-Q3",
+      "2026-Q4"
+    ]
+  },
+  "series_list": [
+    "Americas",
+    "Europe",
+    "Greater China",
+    "Japan",
+    "Mac",
+    "Rest of Asia Pacific",
+    "Services",
+    "Wearables Home and Accessories",
+    "iPad",
+    "iPhone"
+  ],
+  "series": {
+    "Americas": {
+      "type": "segment",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 50430.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 37273.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 37678.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 41664.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 52648.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 40315.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 41198.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 44192.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 58529.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 40315.0,
+          "predicted": 40072.325672560335
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 41198.0,
+          "predicted": 38666.27147166335
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 44192.0,
+          "predicted": 41477.297961872144
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 58529.0,
+          "predicted": 49122.8217713817
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 52648.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 40315.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 41198.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 44192.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 37273.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 37678.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 41664.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 52648.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 46130.53906748532
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 43007.99493563039
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 41984.97038069555
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 42897.60495569073
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 37273.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 37678.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 41664.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 53631.89012306332
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 37273.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 37678.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 41322.94921102594
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 48167.10503466913
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 37273.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 37678.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 40890.15922891372
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 47598.58498403311
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 49396.0,
+          "raw": 45672.0,
+          "lower_80": 45915.0,
+          "upper_80": 55078.0,
+          "bias_correction": 3724.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 50124.0,
+          "raw": 46400.0,
+          "lower_80": 45201.0,
+          "upper_80": 58160.0,
+          "bias_correction": 3724.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 52404.0,
+          "raw": 48681.0,
+          "lower_80": 46375.0,
+          "upper_80": 62247.0,
+          "bias_correction": 3724.0
+        }
+      ],
+      "champion": {
+        "model": "holt_winters",
+        "mape_pct": 7.544,
+        "ensemble_mape_pct": 7.24
+      }
+    },
+    "Europe": {
+      "type": "segment",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 30397.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 24123.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 21884.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 24924.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 33861.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 24454.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 24014.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 28703.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 38146.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 24454.0,
+          "predicted": 25560.82868450864
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 24014.0,
+          "predicted": 22631.86980184732
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 28703.0,
+          "predicted": 24673.56669288532
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 38146.0,
+          "predicted": 31459.25999440932
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 33861.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 24454.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24014.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 28703.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 24123.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 21884.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24924.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 33861.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 28755.347166174623
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 26460.53357694226
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 25076.20175079058
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 26596.22127805037
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 24123.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 21884.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24924.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 33588.83704623471
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 24123.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 21884.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24544.391500385325
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 30661.59217619323
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 24123.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 21884.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24275.64880721048
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 31061.90426251759
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 30989.0,
+          "raw": 28241.0,
+          "lower_80": 27134.0,
+          "upper_80": 34928.0,
+          "bias_correction": 2748.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 31113.0,
+          "raw": 28365.0,
+          "lower_80": 25661.0,
+          "upper_80": 36683.0,
+          "bias_correction": 2748.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 35282.0,
+          "raw": 32534.0,
+          "lower_80": 28605.0,
+          "upper_80": 42104.0,
+          "bias_correction": 2748.0
+        }
+      ],
+      "champion": {
+        "model": "seasonal_naive",
+        "mape_pct": 8.656,
+        "ensemble_mape_pct": 10.462
+      }
+    },
+    "Greater China": {
+      "type": "segment",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 20819.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 16372.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 14728.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 15033.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 18513.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 16002.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 15369.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 14493.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 25526.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 16002.0,
+          "predicted": 16467.67426719871
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 15369.0,
+          "predicted": 14966.565690939797
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 14493.0,
+          "predicted": 15344.024589097193
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 25526.0,
+          "predicted": 16643.759280702485
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 18513.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 16002.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 15369.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 14493.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 16372.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 14728.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 15033.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 18513.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 15393.554196554527
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 15298.901849412025
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 14938.17614925751
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 14336.511303568088
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 16372.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 14728.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 15033.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 18245.658488018813
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 16372.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 14728.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 15920.479442302872
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 16142.929946747325
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 16372.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 14728.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 16032.946478391876
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 16362.688753703953
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 20527.0,
+          "raw": 18535.0,
+          "lower_80": 17684.0,
+          "upper_80": 27417.0,
+          "bias_correction": 1992.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 21785.0,
+          "raw": 19793.0,
+          "lower_80": 17765.0,
+          "upper_80": 31530.0,
+          "bias_correction": 1992.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 21769.0,
+          "raw": 19777.0,
+          "lower_80": 16844.0,
+          "upper_80": 33703.0,
+          "bias_correction": 1992.0
+        }
+      ],
+      "champion": {
+        "model": "seasonal_naive",
+        "mape_pct": 9.421,
+        "ensemble_mape_pct": 11.549
+      }
+    },
+    "Japan": {
+      "type": "segment",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 7767.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 6262.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 5097.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 5926.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 8987.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 7298.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 5782.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 6636.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 9413.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 7298.0,
+          "predicted": 6639.082782505572
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 5782.0,
+          "predicted": 5625.977360084993
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 6636.0,
+          "predicted": 6274.600519816502
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 9413.0,
+          "predicted": 8038.362895458235
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 8987.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7298.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 5782.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 6636.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6262.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 5097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 5926.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8987.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7160.822607742752
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7425.642273205694
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6608.445922520141
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 6619.353501167503
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6262.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 5097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 5926.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8946.507887462436
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6262.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 5097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6343.462651030831
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7842.193199840062
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6262.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 5097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6985.855969166306
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7952.936274307797
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 8452.0,
+          "raw": 7814.0,
+          "lower_80": 7970.0,
+          "upper_80": 9189.0,
+          "bias_correction": 638.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 7319.0,
+          "raw": 6681.0,
+          "lower_80": 6637.0,
+          "upper_80": 8361.0,
+          "bias_correction": 638.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 7965.0,
+          "raw": 7327.0,
+          "lower_80": 7131.0,
+          "upper_80": 9241.0,
+          "bias_correction": 638.0
+        }
+      ],
+      "champion": {
+        "model": "seasonal_naive",
+        "mape_pct": 10.317,
+        "ensemble_mape_pct": 7.944
+      }
+    },
+    "Mac": {
+      "type": "product",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 7780.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 7451.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 7009.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 7744.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 8987.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 7949.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 8046.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 8726.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 8386.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 7949.0,
+          "predicted": 8015.608517356767
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 8046.0,
+          "predicted": 7533.333383493473
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 8726.0,
+          "predicted": 8068.341885360282
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 8386.0,
+          "predicted": 8846.897294713059
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 8987.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7949.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 8046.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8726.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7451.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7009.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7744.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8987.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 8568.254986214964
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 8421.211324416356
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 8387.088760380539
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8702.423581149198
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7451.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7009.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7744.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 9046.187446587865
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7451.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7009.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 8053.448818396518
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8982.653012121742
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7451.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7009.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 8147.055898081391
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8812.42479976271
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 8558.0,
+          "raw": 8397.0,
+          "lower_80": 7937.0,
+          "upper_80": 9055.0,
+          "bias_correction": 161.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 8580.0,
+          "raw": 8419.0,
+          "lower_80": 7701.0,
+          "upper_80": 9283.0,
+          "bias_correction": 161.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 8868.0,
+          "raw": 8708.0,
+          "lower_80": 7792.0,
+          "upper_80": 9729.0,
+          "bias_correction": 161.0
+        }
+      ],
+      "champion": {
+        "model": "cagr",
+        "mape_pct": 5.028,
+        "ensemble_mape_pct": 5.061
+      }
+    },
+    "Rest of Asia Pacific": {
+      "type": "segment",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 10162.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 6723.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 6390.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 7383.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 10291.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 7290.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 7673.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 8442.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 12142.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 7290.0,
+          "predicted": 7381.787952373266
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 7673.0,
+          "predicted": 6706.441124761064
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 8442.0,
+          "predicted": 7478.207934233876
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 12142.0,
+          "predicted": 9622.238456494451
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 10291.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7290.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7673.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8442.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6723.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 6390.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7383.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 10291.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 8310.644039276614
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7706.536372186622
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7635.016626980755
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7969.990344289989
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6723.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 6390.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7383.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 11429.669119114753
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6723.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 6390.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7434.09514814785
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 9331.503905020958
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 6723.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 6390.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7467.328929058136
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 9138.803355482509
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 10217.0,
+          "raw": 9128.0,
+          "lower_80": 9036.0,
+          "upper_80": 11648.0,
+          "bias_correction": 1090.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 10576.0,
+          "raw": 9486.0,
+          "lower_80": 8905.0,
+          "upper_80": 12598.0,
+          "bias_correction": 1090.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 11226.0,
+          "raw": 10136.0,
+          "lower_80": 9179.0,
+          "upper_80": 13703.0,
+          "bias_correction": 1090.0
+        }
+      ],
+      "champion": {
+        "model": "holt_winters",
+        "mape_pct": 10.727,
+        "ensemble_mape_pct": 11.506
+      }
+    },
+    "Services": {
+      "type": "product",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 23117.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 23867.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 24213.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 24972.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 26340.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 26645.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 27423.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 28750.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 30013.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 26645.0,
+          "predicted": 25914.093773010027
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 27423.0,
+          "predicted": 26440.20908935908
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 28750.0,
+          "predicted": 27601.18818123942
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 30013.0,
+          "predicted": 28886.31179938817
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 26340.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 26645.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 27423.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 28750.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 23867.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 24213.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24972.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 26340.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 26833.45702158927
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 27538.38291452969
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 28298.380910373937
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 29367.66947732346
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 23867.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 24213.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 24972.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 27794.371372885325
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 23867.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 24213.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 27514.154890896272
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 28993.783065946373
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 23867.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 24213.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 27277.618120950065
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 28463.675440700103
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 31128.0,
+          "raw": 30131.0,
+          "lower_80": 30862.0,
+          "upper_80": 31280.0,
+          "bias_correction": 997.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 31819.0,
+          "raw": 30822.0,
+          "lower_80": 31442.0,
+          "upper_80": 32033.0,
+          "bias_correction": 997.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 32614.0,
+          "raw": 31617.0,
+          "lower_80": 32153.0,
+          "upper_80": 32877.0,
+          "bias_correction": 997.0
+        }
+      ],
+      "champion": {
+        "model": "cagr",
+        "mape_pct": 1.212,
+        "ensemble_mape_pct": 3.519
+      }
+    },
+    "Wearables Home and Accessories": {
+      "type": "product",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 11953.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 7913.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 8097.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 9042.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 11747.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 7522.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 7404.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 9013.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 11493.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 7522.0,
+          "predicted": 8224.549403010196
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 7404.0,
+          "predicted": 8079.350582649149
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 9013.0,
+          "predicted": 8519.058859237344
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 11493.0,
+          "predicted": 10946.823737542509
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 11747.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7522.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7404.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 9013.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7913.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 8097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 9042.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 11747.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 9883.56834651181
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 8320.367064497257
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7560.090754874171
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7917.916017490906
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7913.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 8097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 9042.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 11522.237247635934
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7913.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 8097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7426.916460173892
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 10518.877301973664
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 7913.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 8097.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 7884.836896595274
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 10122.869179091338
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 7738.0,
+          "raw": 7822.0,
+          "lower_80": 7120.0,
+          "upper_80": 8368.0,
+          "bias_correction": -84.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 7712.0,
+          "raw": 7797.0,
+          "lower_80": 6838.0,
+          "upper_80": 8604.0,
+          "bias_correction": -84.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 8803.0,
+          "raw": 8887.0,
+          "lower_80": 7732.0,
+          "upper_80": 9895.0,
+          "bias_correction": -84.0
+        }
+      ],
+      "champion": {
+        "model": "holt_winters",
+        "mape_pct": 3.784,
+        "ensemble_mape_pct": 7.173
+      }
+    },
+    "iPad": {
+      "type": "product",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 7023.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 5559.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 7162.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 6950.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 8088.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 6402.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 6581.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 6952.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 8595.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 6402.0,
+          "predicted": 6135.516244336298
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 6581.0,
+          "predicted": 7085.186292389897
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 6952.0,
+          "predicted": 6816.523508418174
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 8595.0,
+          "predicted": 7657.376504395952
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 8088.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 6402.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6581.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 6952.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 5559.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7162.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6950.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8088.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 8038.28582818909
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7264.863121049647
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6990.918447981781
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7023.654819722438
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 5559.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7162.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6950.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 8248.081081444889
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 5559.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7162.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6753.8960298154325
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7479.045946346148
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 5559.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 7162.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 6509.812968045522
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 7280.9438819777215
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 7158.0,
+          "raw": 6949.0,
+          "lower_80": 6445.0,
+          "upper_80": 7887.0,
+          "bias_correction": 209.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 7281.0,
+          "raw": 7072.0,
+          "lower_80": 6273.0,
+          "upper_80": 8312.0,
+          "bias_correction": 209.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 7581.0,
+          "raw": 7372.0,
+          "lower_80": 6346.0,
+          "upper_80": 8843.0,
+          "bias_correction": 209.0
+        }
+      ],
+      "champion": {
+        "model": "holt_winters",
+        "mape_pct": 6.515,
+        "ensemble_mape_pct": 6.17
+      }
+    },
+    "iPhone": {
+      "type": "product",
+      "history": [
+        {
+          "period": "2024-Q1",
+          "value": 69702.0
+        },
+        {
+          "period": "2024-Q2",
+          "value": 45963.0
+        },
+        {
+          "period": "2024-Q3",
+          "value": 39296.0
+        },
+        {
+          "period": "2024-Q4",
+          "value": 46222.0
+        },
+        {
+          "period": "2025-Q1",
+          "value": 69138.0
+        },
+        {
+          "period": "2025-Q2",
+          "value": 46841.0
+        },
+        {
+          "period": "2025-Q3",
+          "value": 44582.0
+        },
+        {
+          "period": "2025-Q4",
+          "value": 49025.0
+        },
+        {
+          "period": "2026-Q1",
+          "value": 85269.0
+        }
+      ],
+      "ensemble_backtest": [
+        {
+          "period": "2025-Q2",
+          "actual": 46841.0,
+          "predicted": 48596.499354629545
+        },
+        {
+          "period": "2025-Q3",
+          "actual": 44582.0,
+          "predicted": 40977.04123317106
+        },
+        {
+          "period": "2025-Q4",
+          "actual": 49025.0,
+          "predicted": 48215.90857318997
+        },
+        {
+          "period": "2026-Q1",
+          "actual": 85269.0,
+          "predicted": 62731.726654457205
+        }
+      ],
+      "base_model_backtest": {
+        "naive_last": [
+          {
+            "period": "2025-Q2",
+            "predicted": 69138.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 46841.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 44582.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 49025.0
+          }
+        ],
+        "seasonal_naive": [
+          {
+            "period": "2025-Q2",
+            "predicted": 45963.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 39296.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 46222.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 69138.0
+          }
+        ],
+        "cagr": [
+          {
+            "period": "2025-Q2",
+            "predicted": 52423.80660729492
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 48580.87217938766
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 45467.390033018586
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 45984.77466851755
+          }
+        ],
+        "holt_winters": [
+          {
+            "period": "2025-Q2",
+            "predicted": 45963.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 39296.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 46222.0
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 73018.92137726981
+          }
+        ],
+        "ridge": [
+          {
+            "period": "2025-Q2",
+            "predicted": 45963.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 39296.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 57160.18287483128
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 59525.29519834123
+          }
+        ],
+        "gbm": [
+          {
+            "period": "2025-Q2",
+            "predicted": 45963.0
+          },
+          {
+            "period": "2025-Q3",
+            "predicted": 39296.0
+          },
+          {
+            "period": "2025-Q4",
+            "predicted": 49790.287550933936
+          },
+          {
+            "period": "2026-Q1",
+            "predicted": 59987.50139669427
+          }
+        ]
+      },
+      "forecasts": [
+        {
+          "horizon": 1,
+          "period": "2026-Q2",
+          "point": 66070.0,
+          "raw": 59771.0,
+          "lower_80": 58015.0,
+          "upper_80": 82308.0,
+          "bias_correction": 6299.0
+        },
+        {
+          "horizon": 2,
+          "period": "2026-Q3",
+          "point": 68405.0,
+          "raw": 62106.0,
+          "lower_80": 57014.0,
+          "upper_80": 91369.0,
+          "bias_correction": 6299.0
+        },
+        {
+          "horizon": 3,
+          "period": "2026-Q4",
+          "point": 79927.0,
+          "raw": 73628.0,
+          "lower_80": 65976.0,
+          "upper_80": 108053.0,
+          "bias_correction": 6299.0
+        }
+      ],
+      "champion": {
+        "model": "holt_winters",
+        "mape_pct": 8.454,
+        "ensemble_mape_pct": 9.979
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+model,series,n_predictions,mape_pct,mae,rmse,series_type
+naive_last,Americas,4,16.001,7636.8,9583.8,segment
+seasonal_naive,Americas,4,7.965,3742.8,3956.7,segment
+cagr,Americas,4,12.63,6366.0,8460.3,segment
+holt_winters,Americas,4,7.544,3496.8,3606.1,segment
+ridge,Americas,4,10.071,4948.2,5857.6,segment
+gbm,Americas,4,10.559,5198.6,6164.8,segment
+naive_last,Europe,4,20.348,5994.8,7068.3,segment
+seasonal_naive,Europe,4,8.656,2631.2,3053.2,segment
+cagr,Europe,4,17.673,5481.1,6539.1,segment
+holt_winters,Europe,4,8.834,2699.3,3150.2,segment
+ridge,Europe,4,11.083,3526.0,4414.7,segment
+gbm,Europe,4,11.055,3493.1,4313.7,segment
+naive_last,Greater China,4,17.269,3763.2,5683.3,segment
+seasonal_naive,Greater China,4,9.421,2141.0,3536.3,segment
+cagr,Greater China,4,12.791,3078.3,5607.5,segment
+holt_winters,Greater China,4,9.683,2207.8,3668.9,segment
+ridge,Greater China,4,13.273,2955.4,4759.9,segment
+gbm,Greater China,4,13.252,2928.6,4660.6,segment
+naive_last,Japan,4,22.933,1709.0,1843.4,segment
+seasonal_naive,Japan,4,10.317,714.2,746.3,segment
+cagr,Japan,4,15.1,1150.5,1622.2,segment
+holt_winters,Japan,4,10.424,724.4,752.4,segment
+ridge,Japan,4,11.785,896.1,1011.9,segment
+gbm,Japan,4,11.707,882.7,974.3,segment
+naive_last,Mac,4,6.528,538.8,645.1,product
+seasonal_naive,Mac,4,9.393,779.5,813.8,product
+cagr,Mac,4,5.028,412.5,429.9,product
+holt_winters,Mac,4,9.57,794.3,825.2,product
+ridge,Mac,4,8.494,701.1,730.0,product
+gbm,Mac,4,7.718,635.1,678.3,product
+naive_last,Rest of Asia Pacific,4,21.435,1963.2,2420.4,segment
+seasonal_naive,Rest of Asia Pacific,4,13.072,1190.0,1276.3,segment
+cagr,Rest of Asia Pacific,4,14.589,1508.3,2185.2,segment
+holt_winters,Rest of Asia Pacific,4,10.727,905.3,948.2,segment
+ridge,Rest of Asia Pacific,4,14.896,1417.1,1649.4,segment
+gbm,Rest of Asia Pacific,4,15.195,1457.0,1727.5,segment
+naive_last,Services,4,3.201,918.2,1006.8,product
+seasonal_naive,Services,4,11.878,3359.8,3383.3,product
+cagr,Services,4,1.212,350.2,409.0,product
+holt_winters,Services,4,10.666,2996.2,3050.3,product
+ridge,Services,4,7.456,2060.8,2268.7,product
+gbm,Services,4,8.104,2252.4,2376.4,product
+naive_last,Wearables Home and Accessories,4,24.298,2108.0,2578.9,product
+seasonal_naive,Wearables Home and Accessories,4,4.272,341.8,417.9,product
+cagr,Wearables Home and Accessories,4,22.75,2076.5,2308.1,product
+holt_winters,Wearables Home and Accessories,4,3.784,285.6,398.4,product
+ridge,Wearables Home and Accessories,4,10.158,911.1,1012.1,product
+gbm,Wearables Home and Accessories,4,9.749,895.6,972.5,product
+naive_last,iPad,4,13.377,969.8,1195.0,product
+seasonal_naive,iPad,4,6.981,483.2,571.2,product
+cagr,iPad,4,13.698,982.6,1184.9,product
+holt_winters,iPad,4,6.515,443.2,540.5,product
+ridge,iPad,4,9.457,684.5,763.7,product
+gbm,iPad,4,10.911,795.1,861.8,product
+naive_last,iPhone,4,26.059,16310.8,21422.1,product
+seasonal_naive,iPhone,4,9.592,6274.5,8613.6,product
+cagr,iPhone,4,18.554,13105.9,20019.2,product
+holt_winters,iPhone,4,8.454,5304.3,6830.7,product
+ridge,iPhone,4,15.129,10010.7,13762.6,product
+gbm,iPhone,4,11.235,8052.7,12927.2,product

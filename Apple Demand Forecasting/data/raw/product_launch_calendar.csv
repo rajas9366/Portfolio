@@ -1,0 +1,13 @@
+fiscal_year,fiscal_quarter,product_launched,product_category,launch_significance
+2023,Q1,iPhone 14 / 14 Pro,iPhone,major
+2023,Q2,HomePod 2nd gen / MacBook Pro M2 Pro/Max / Mac mini M2,Mac,minor
+2023,Q3,15-inch MacBook Air / Mac Studio M2 / Mac Pro M2 Ultra / Vision Pro announced,Mac,minor
+2023,Q4,iPhone 15 / 15 Pro / Apple Watch Series 9 / Ultra 2,iPhone,major
+2024,Q1,M3 MacBook Pro,Mac,minor
+2024,Q2,iPad Pro M4 / iPad Air M2,iPad,minor
+2024,Q3,Apple Intelligence announced / iOS 18 announced,Services,minor
+2024,Q4,iPhone 16 / 16 Pro / Apple Watch Series 10 / AirPods 4,iPhone,major
+2025,Q1,MacBook Pro M4 / Mac mini M4 / iMac M4 / iPad mini A17,Mac,minor
+2025,Q2,iPhone 16e / iPad Air M3 / iPad / MacBook Air M4 / Mac Studio M4 Max,iPhone,minor
+2025,Q3,iOS 26 / macOS Tahoe 26 / iPadOS 26 / watchOS 26 / visionOS 26 / tvOS 26,Services,minor
+2025,Q4,iPhone 17 / iPhone Air / iPhone 17 Pro / 17 Pro Max / Watch Series 11 / SE 3 / Ultra 3 / AirPods Pro 3,iPhone,major

@@ -1,0 +1,37 @@
+======================================================================
+Number-grounding validation
+======================================================================
+Verified:    28
+Unverified:  0  
+Ambiguous:   0
+Result:      PASS
+
+ALL MATCHES:
+  [OK]      $143.8B -> consolidated.current_millions
+  [OK]      $124.3B -> consolidated.prior_millions
+  [OK]       $19.5B -> consolidated.change_millions
+  [OK]       $25.5B -> by_segment.Greater China.current_millions
+  [OK]       $18.5B -> by_segment.Greater China.prior_millions
+  [OK]       $12.1B -> by_segment.Rest of Asia Pacific.current_millions
+  [OK]       $38.1B -> by_segment.Europe.current_millions
+  [OK]       $58.5B -> by_segment.Americas.current_millions
+  [OK]       $52.6B -> by_segment.Americas.prior_millions
+  [OK]        $9.4B -> by_segment.Japan.current_millions
+  [OK]       $85.3B -> by_product.iPhone.current_millions
+  [OK]       $69.1B -> by_product.iPhone.prior_millions
+  [OK]       $16.1B -> by_product.iPhone.change_millions
+  [OK]       $30.0B -> by_product.Services.current_millions
+  [OK]        $8.6B -> by_product.iPad.current_millions
+  [OK]        $8.4B -> by_product.Mac.current_millions
+  [OK]       $11.5B -> by_product.Wearables Home and Accessories.current_millions
+  [OK]       +15.6% -> consolidated.change_pct
+  [OK]       +37.9% -> by_segment.Greater China.change_pct
+  [OK]       +18.0% -> by_segment.Rest of Asia Pacific.change_pct
+  [OK]       +12.7% -> by_segment.Europe.change_pct
+  [OK]       +11.2% -> by_segment.Americas.change_pct
+  [OK]        +4.7% -> by_segment.Japan.change_pct
+  [OK]       +23.3% -> by_product.iPhone.change_pct
+  [OK]       +13.9% -> by_product.Services.change_pct
+  [OK]        +6.3% -> by_product.iPad.change_pct
+  [OK]        -6.7% -> by_product.Mac.change_pct
+  [OK]        -2.2% -> by_product.Wearables Home and Accessories.change_pct

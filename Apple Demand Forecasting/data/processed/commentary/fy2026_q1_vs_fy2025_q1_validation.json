@@ -1,0 +1,260 @@
+{
+  "passed": true,
+  "verified_count": 28,
+  "unverified_count": 0,
+  "ambiguous_count": 0,
+  "matches": [
+    {
+      "raw": "$143.8B",
+      "value": 143800.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "consolidated.current_millions",
+      "tolerance": 718.78,
+      "note": null
+    },
+    {
+      "raw": "$124.3B",
+      "value": 124300.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "consolidated.prior_millions",
+      "tolerance": 621.5,
+      "note": null
+    },
+    {
+      "raw": "$19.5B",
+      "value": 19500.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "consolidated.change_millions",
+      "tolerance": 97.28,
+      "note": null
+    },
+    {
+      "raw": "$25.5B",
+      "value": 25500.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Greater China.current_millions",
+      "tolerance": 127.63000000000001,
+      "note": null
+    },
+    {
+      "raw": "$18.5B",
+      "value": 18500.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Greater China.prior_millions",
+      "tolerance": 92.565,
+      "note": null
+    },
+    {
+      "raw": "$12.1B",
+      "value": 12100.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Rest of Asia Pacific.current_millions",
+      "tolerance": 60.71,
+      "note": null
+    },
+    {
+      "raw": "$38.1B",
+      "value": 38100.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Europe.current_millions",
+      "tolerance": 190.73,
+      "note": null
+    },
+    {
+      "raw": "$58.5B",
+      "value": 58500.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Americas.current_millions",
+      "tolerance": 292.645,
+      "note": null
+    },
+    {
+      "raw": "$52.6B",
+      "value": 52600.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Americas.prior_millions",
+      "tolerance": 263.24,
+      "note": null
+    },
+    {
+      "raw": "$9.4B",
+      "value": 9400.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_segment.Japan.current_millions",
+      "tolerance": 50.0,
+      "note": null
+    },
+    {
+      "raw": "$85.3B",
+      "value": 85300.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.iPhone.current_millions",
+      "tolerance": 426.345,
+      "note": null
+    },
+    {
+      "raw": "$69.1B",
+      "value": 69100.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.iPhone.prior_millions",
+      "tolerance": 345.69,
+      "note": null
+    },
+    {
+      "raw": "$16.1B",
+      "value": 16100.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.iPhone.change_millions",
+      "tolerance": 80.655,
+      "note": null
+    },
+    {
+      "raw": "$30.0B",
+      "value": 30000.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.Services.current_millions",
+      "tolerance": 150.065,
+      "note": null
+    },
+    {
+      "raw": "$8.6B",
+      "value": 8600.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.iPad.current_millions",
+      "tolerance": 50.0,
+      "note": null
+    },
+    {
+      "raw": "$8.4B",
+      "value": 8400.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.Mac.current_millions",
+      "tolerance": 50.0,
+      "note": null
+    },
+    {
+      "raw": "$11.5B",
+      "value": 11500.0,
+      "unit": "millions",
+      "status": "verified",
+      "matched_to": "by_product.Wearables Home and Accessories.current_millions",
+      "tolerance": 57.465,
+      "note": null
+    },
+    {
+      "raw": "+15.6%",
+      "value": 15.6,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "consolidated.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+37.9%",
+      "value": 37.9,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_segment.Greater China.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+18.0%",
+      "value": 18.0,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_segment.Rest of Asia Pacific.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+12.7%",
+      "value": 12.7,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_segment.Europe.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+11.2%",
+      "value": 11.2,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_segment.Americas.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+4.7%",
+      "value": 4.7,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_segment.Japan.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+23.3%",
+      "value": 23.3,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_product.iPhone.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+13.9%",
+      "value": 13.9,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_product.Services.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "+6.3%",
+      "value": 6.3,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_product.iPad.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "-6.7%",
+      "value": -6.7,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_product.Mac.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    },
+    {
+      "raw": "-2.2%",
+      "value": -2.2,
+      "unit": "percent",
+      "status": "verified",
+      "matched_to": "by_product.Wearables Home and Accessories.change_pct",
+      "tolerance": 0.5,
+      "note": null
+    }
+  ]
+}

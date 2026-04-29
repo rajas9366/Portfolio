@@ -1,0 +1,125 @@
+{
+  "brief_type": "forecast_vs_baseline",
+  "comparison": "2026-Q2 forecast vs FY2025 Q2 actual",
+  "forecast_period": "2026-Q2",
+  "comparison_period": {
+    "label": "FY2025 Q2",
+    "end_date": "2025-03-29"
+  },
+  "consolidated": {
+    "forecast_segment_sum_millions": 119581.0,
+    "forecast_product_sum_millions": 120652.0,
+    "baseline_total_millions": 95359.0,
+    "implied_yoy_pct_segment_basis": 25.4
+  },
+  "by_segment": [
+    {
+      "name": "Americas",
+      "forecast_millions": 49396.0,
+      "lower_80_millions": 45915.0,
+      "upper_80_millions": 55078.0,
+      "baseline_millions": 40315.0,
+      "implied_yoy_pct": 22.53,
+      "champion_model": "holt_winters",
+      "ensemble_mape_pct": 7.24
+    },
+    {
+      "name": "Europe",
+      "forecast_millions": 30989.0,
+      "lower_80_millions": 27134.0,
+      "upper_80_millions": 34928.0,
+      "baseline_millions": 24454.0,
+      "implied_yoy_pct": 26.72,
+      "champion_model": "seasonal_naive",
+      "ensemble_mape_pct": 10.46
+    },
+    {
+      "name": "Greater China",
+      "forecast_millions": 20527.0,
+      "lower_80_millions": 17684.0,
+      "upper_80_millions": 27417.0,
+      "baseline_millions": 16002.0,
+      "implied_yoy_pct": 28.28,
+      "champion_model": "seasonal_naive",
+      "ensemble_mape_pct": 11.55
+    },
+    {
+      "name": "Japan",
+      "forecast_millions": 8452.0,
+      "lower_80_millions": 7970.0,
+      "upper_80_millions": 9189.0,
+      "baseline_millions": 7298.0,
+      "implied_yoy_pct": 15.81,
+      "champion_model": "seasonal_naive",
+      "ensemble_mape_pct": 7.94
+    },
+    {
+      "name": "Rest of Asia Pacific",
+      "forecast_millions": 10217.0,
+      "lower_80_millions": 9036.0,
+      "upper_80_millions": 11648.0,
+      "baseline_millions": 7290.0,
+      "implied_yoy_pct": 40.15,
+      "champion_model": "holt_winters",
+      "ensemble_mape_pct": 11.51
+    }
+  ],
+  "by_product": [
+    {
+      "name": "Mac",
+      "forecast_millions": 8558.0,
+      "lower_80_millions": 7937.0,
+      "upper_80_millions": 9055.0,
+      "baseline_millions": 7949.0,
+      "implied_yoy_pct": 7.66,
+      "champion_model": "cagr",
+      "ensemble_mape_pct": 5.06
+    },
+    {
+      "name": "Services",
+      "forecast_millions": 31128.0,
+      "lower_80_millions": 30862.0,
+      "upper_80_millions": 31280.0,
+      "baseline_millions": 26645.0,
+      "implied_yoy_pct": 16.82,
+      "champion_model": "cagr",
+      "ensemble_mape_pct": 3.52
+    },
+    {
+      "name": "Wearables Home and Accessories",
+      "forecast_millions": 7738.0,
+      "lower_80_millions": 7120.0,
+      "upper_80_millions": 8368.0,
+      "baseline_millions": 7522.0,
+      "implied_yoy_pct": 2.87,
+      "champion_model": "holt_winters",
+      "ensemble_mape_pct": 7.17
+    },
+    {
+      "name": "iPad",
+      "forecast_millions": 7158.0,
+      "lower_80_millions": 6445.0,
+      "upper_80_millions": 7887.0,
+      "baseline_millions": 6402.0,
+      "implied_yoy_pct": 11.81,
+      "champion_model": "holt_winters",
+      "ensemble_mape_pct": 6.17
+    },
+    {
+      "name": "iPhone",
+      "forecast_millions": 66070.0,
+      "lower_80_millions": 58015.0,
+      "upper_80_millions": 82308.0,
+      "baseline_millions": 46841.0,
+      "implied_yoy_pct": 41.05,
+      "champion_model": "holt_winters",
+      "ensemble_mape_pct": 9.98
+    }
+  ],
+  "key_observations": [
+    "Forecast implies the strongest YoY in Rest of Asia Pacific at +40.15%.",
+    "Forecast implies the weakest YoY in Japan at +15.81%.",
+    "iPhone forecast band is wide: $58.0B - $82.3B (80% interval).",
+    "Services forecast band is unusually narrow at $30.9B - $31.3B (best backtest MAPE of any series at 3.52%)."
+  ]
+}
