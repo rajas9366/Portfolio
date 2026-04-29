@@ -1,0 +1,29 @@
+# Core
+pandas>=2.0
+numpy>=1.24
+lxml>=4.9             # XBRL parsing (Chunk 1B)
+scikit-learn>=1.3     # Forecasting (Chunk 2)
+
+# Visualization
+matplotlib>=3.7
+# Interactive viewer (docs/interactive_forecast.html) loads Plotly via CDN —
+# no Python install needed. The build_interactive.py script only depends on
+# pandas to assemble the JSON payload from the database.
+
+# LLM commentary (Chunk 4)
+anthropic>=0.40       # API client for variance commentary
+
+# Notebooks
+jupyter>=1.0
+jupytext>=1.16        # Convert notebooks/02_forecast.py to .ipynb
+ipykernel>=6.25
+
+# Testing
+pytest>=7.4
+
+# Optional — for an extended forecasting comparison if you want to run
+# Prophet/SARIMA/XGBoost alongside the in-house models. The in-house
+# pipeline does not require these; install only if you want to extend.
+# prophet>=1.1
+# statsmodels>=0.14
+# xgboost>=2.0
