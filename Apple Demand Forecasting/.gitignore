@@ -1,0 +1,30 @@
+# Built artifacts
+data/processed/*.db
+data/processed/*.parquet
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
+
+# Environment
+.venv/
+venv/
+.env
+.envrc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Notebook outputs that bloat the repo (use jupyter nbconvert --clear-output before commit)
+notebooks/*-checkpoint.ipynb
+
+# Note: data/processed/forecasts/ contents are committed despite being
+# regenerable, so a reviewer can see the output without running the pipeline.
+# The SQLite DB itself stays gitignored — it's larger and generates from
+# `python scripts/build_database.py` in seconds.
+
+# Tableau workbook lock files
+*.twb.lock
+*.twbx.lock
