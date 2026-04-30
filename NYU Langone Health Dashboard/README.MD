@@ -4,7 +4,7 @@ An interactive financial performance dashboard built from NYU Langone Health's
 FY2025-Q4 Annual Report (unaudited), issued November 2025.
 
 ## Live Demo
-[Open Dashboard](https://github.com/rajas9366/Portfolio/blob/Data-Analytics/NYU%20Langone%20Health%20Dashboard/NYU%20Langone%20Dashboard.html)
+[Open Dashboard]([Open Dashboard](https://rajas9366.github.io/Portfolio/NYU%20Langone%20Health%20Dashboard/NYU%20Langone%20Dashboard.html))
 
 ## Features
 - 4 tabs: Overview, Facilities, Revenue & Expenses, Payor Mix
