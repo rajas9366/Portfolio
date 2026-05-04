@@ -6,10 +6,6 @@ Cancer Institute Clinical Trials Office. FY2026 budget vs. actual,
 stress testing — all anchored to UR's audited FY2025 consolidated
 financials.
 
-Show Image
-Show Image
-Show Image
-Show Image
 Headline outputs
 MetricBase caseFY26 Total Revenue$27.5MFY30 Total Revenue$37.1M5-Year Revenue CAGR7.8%Active Trial Portfolio Net Margin$3.1M (10 trials, $11.5M direct revenue)Phase III Industry Trial NPV @ 8%$533KBreak-even Accruals (Phase III industry)65 patientsFY26 Cost per Accrual$24.8K (vs $14K target)
 Workbook map
